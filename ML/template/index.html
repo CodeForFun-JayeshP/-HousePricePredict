@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Home Price Predictor Machine Learning!</h1>
+        <pre>Jayesh Patel</pre>
+        <form action="{% url 'result' %}">
+          {% csrf_token %}
+          Area in square feet : <input type="number" name="message" value="">
+          <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+        <font color="red"><h5 class="text-warning">Note : Not to input the negative that could cause wrong prediction!</h5></font>
+      </div>
+    </div>
+
+  </body>
+</html>
